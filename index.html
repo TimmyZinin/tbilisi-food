@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Еда в Ваке: 4 варианта</title>
+<meta name="description" content="Как питаться неделю в Ваке, Тбилиси: четыре варианта с ценами, корзина закупки в Wolt, обеды рядом и готовые рационы.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f5;
+    --card: #ffffff;
+    --text: #1a1a1a;
+    --text-2: #555555;
+    --muted: #8a8a8a;
+    --border: #e7e2dc;
+    --accent: #ff5b3b;
+    --accent-dim: rgba(255, 91, 59, 0.10);
+    --green: #0f9d6b;
+    --green-dim: rgba(16, 185, 129, 0.12);
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Onest", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1, h2 { font-family: "Unbounded", "Onest", sans-serif; line-height: 1.2; }
+  h1 { font-size: 28px; margin: 8px 0 8px; }
+  h2 { font-size: 20px; margin: 40px 0 12px; }
+  .lead { color: var(--text-2); margin: 0 0 8px; }
+  .note { color: var(--muted); font-size: 14px; }
+  a { color: #d9401f; text-underline-offset: 2px; }
+  a:hover { color: var(--accent); }
+
+  .rec {
+    background: var(--accent-dim);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    margin: 20px 0;
+  }
+  .rec strong { display: block; font-size: 18px; margin-bottom: 4px; }
+
+  .variants { display: grid; gap: 12px; }
+  .v {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+  }
+  .v.best { border: 2px solid var(--accent); }
+  .v-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .v-title { font-weight: 600; font-size: 17px; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 600;
+    background: var(--accent); color: #fff; border-radius: 999px; padding: 2px 10px;
+  }
+  .nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+  .num { background: var(--bg); border-radius: 8px; padding: 8px 10px; }
+  .num b { display: block; font-size: 18px; font-variant-numeric: tabular-nums; }
+  .num span { font-size: 12px; color: var(--muted); }
+  .pm { margin: 0; padding-left: 0; list-style: none; font-size: 15px; }
+  .pm li { padding-left: 22px; position: relative; margin: 4px 0; }
+  .pm li::before { position: absolute; left: 0; font-weight: 700; }
+  .pm .plus::before { content: "+"; color: var(--green); }
+  .pm .minus::before { content: "−"; color: var(--accent); }
+
+  .tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-size: 13px; color: var(--muted); font-weight: 500; background: #f4f0eb; }
+  tr:last-child td { border-bottom: 0; }
+  td.r, th.r { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  tr.total td { font-weight: 700; background: var(--green-dim); }
+
+  .cards { display: grid; gap: 12px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
+  .card h3 { margin: 0 0 4px; font-size: 16px; }
+  .card p { margin: 4px 0; font-size: 15px; }
+
+  ol.meals { padding-left: 20px; margin: 8px 0; }
+  ol.meals li { margin: 4px 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); }
+
+  @media (min-width: 640px) {
+    h1 { font-size: 36px; }
+    .cards { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <p class="note">Тбилиси, район Ваке · цены проверены 24.09.2026</p>
+  <h1>Еда в Ваке: 4 варианта на неделю</h1>
+  <p class="lead">Сколько стоит питаться неделю, сколько времени уходит на еду и что выбрать. Цены в лари, по открытым страницам продавцов, без сборов и доставки Wolt.</p>
+
+  <div class="rec">
+    <strong>Рекомендация: вариант 4 на пробную неделю</strong>
+    Заготовки дома плюс два обеда с доставкой. 243 ₾ за неделю, на 282 ₾ дешевле готового рациона Honey. Два обеда в рабочие дни без готовки, порции риса, гречки, хлеба и бананов легко увеличить после тренировки. Если в холодильнике мало места под заготовки, удобнее вариант 3.
+  </div>
+
+  <h2>Четыре варианта</h2>
+  <div class="variants">
+
+    <div class="v">
+      <div class="v-head"><span class="v-title">1. Готовый рацион Honey, 2000 ккал</span></div>
+      <div class="nums">
+        <div class="num"><b>75 ₾</b><span>в день (разово 80)</span></div>
+        <div class="num"><b>525 ₾</b><span>в неделю</span></div>
+        <div class="num"><b>10–15 мин</b><span>в день</span></div>
+      </div>
+      <ul class="pm">
+        <li class="plus">5 готовых блюд в день, доставка каждый день</li>
+        <li class="plus">В <a href="https://honeyrestaurant.ge/en/products/2000-calories" target="_blank" rel="noopener">меню</a> курица, индейка, тунец, яйца, рис</li>
+        <li class="minus">Самый дорогой вариант</li>
+        <li class="minus">Граммы белков, жиров, углеводов не указаны; при высокой нагрузке 2000 ккал может не хватить, докупать еду придётся отдельно</li>
+      </ul>
+    </div>
+
+    <div class="v">
+      <div class="v-head"><span class="v-title">2. Готовить самому</span></div>
+      <div class="nums">
+        <div class="num"><b>30,73 ₾</b><span>в день</span></div>
+        <div class="num"><b>215,08 ₾</b><span>первая закупка</span></div>
+        <div class="num"><b>25–35 мин</b><span>в день + 1–1,5 ч в выходной</span></div>
+      </div>
+      <ul class="pm">
+        <li class="plus">Самый дешёвый, порции любые</li>
+        <li class="plus">Крупы, картофель, хлеб и фрукты для энергии, курица, яйца и творог для белка</li>
+        <li class="minus">Нужны кухня, холодильник, посуда и время на уборку</li>
+      </ul>
+    </div>
+
+    <div class="v">
+      <div class="v-head"><span class="v-title">3. Обед в кафе рядом + завтрак и ужин дома</span></div>
+      <div class="nums">
+        <div class="num"><b>39–57 ₾</b><span>в день</span></div>
+        <div class="num"><b>273–397 ₾</b><span>в неделю</span></div>
+        <div class="num"><b>25–40 мин</b><span>в день с дорогой</span></div>
+      </div>
+      <ul class="pm">
+        <li class="plus">Обед без готовки: 7 обедов от 15 ₾ (лобио) до 32,80 ₾ (курица, гарнир, салат)</li>
+        <li class="plus">Домашняя корзина дешевле: 167,68 ₾ (без курицы)</li>
+        <li class="minus">Одного обеда мало для активного дня, завтрак и ужин всё равно дома</li>
+      </ul>
+    </div>
+
+    <div class="v best">
+      <div class="v-head"><span class="v-title">4. Гибрид: заготовки + 2 обеда с доставкой</span><span class="badge">Выбор</span></div>
+      <div class="nums">
+        <div class="num"><b>34,73 ₾</b><span>в день</span></div>
+        <div class="num"><b>243,08 ₾</b><span>в неделю</span></div>
+        <div class="num"><b>20–30 мин</b><span>в день + 1–1,5 ч в выходной</span></div>
+      </div>
+      <ul class="pm">
+        <li class="plus">Пять обедов из домашних заготовок, два — куриный <a href="https://wolt.com/en/geo/tbilisi/restaurant/assorti-lunch-abashidze" target="_blank" rel="noopener">ланчбокс Assorti</a> по 29,80 ₾</li>
+        <li class="plus">Крупы, белок и молочное есть на каждый день</li>
+        <li class="minus">Доставка обедов оплачивается сверху</li>
+      </ul>
+      <p class="note">Расчёт: корзина 215,08 − 2 пачки курицы по 15,80 + 2 ланчбокса по 29,80 = 243,08 ₾.</p>
+    </div>
+  </div>
+
+  <h2>Корзина на неделю</h2>
+  <p class="lead">Основной магазин — <a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze" target="_blank" rel="noopener">Wolt Market Tsintsadze</a>, доставляет в Ваке. Цены за целые упаковки, крупы и масло останутся на следующую неделю.</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Продукт</th><th class="r">Кол-во × цена</th><th class="r">₾</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze" target="_blank" rel="noopener">Куриное филе 600 г</a></td><td class="r">4 × 15,80</td><td class="r">63,20</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze" target="_blank" rel="noopener">Яйца, 10 шт.</a></td><td class="r">2 × 5,70</td><td class="r">11,40</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze/items/menucategory-137" target="_blank" rel="noopener">Творог Santino 320 г</a></td><td class="r">7 × 8,40</td><td class="r">58,80</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze" target="_blank" rel="noopener">Йогурт греческий 235 г</a></td><td class="r">3 × 5,60</td><td class="r">16,80</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze/items/menucategory-233" target="_blank" rel="noopener">Овсяная крупа 600 г</a></td><td class="r">1</td><td class="r">5,95</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze/items/menucategory-233" target="_blank" rel="noopener">Рис 1,5 кг</a></td><td class="r">1</td><td class="r">7,40</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze/items/menucategory-233" target="_blank" rel="noopener">Гречка 1,5 кг</a></td><td class="r">1</td><td class="r">8,95</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze" target="_blank" rel="noopener">Бананы ~2 кг</a></td><td class="r">~</td><td class="r">9,90</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze" target="_blank" rel="noopener">Картофель ~2 кг</a></td><td class="r">~</td><td class="r">4,50</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze" target="_blank" rel="noopener">Огурцы ~1 кг</a></td><td class="r">~</td><td class="r">3,15</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze" target="_blank" rel="noopener">Помидоры черри 500 г</a></td><td class="r">2 × 6,45</td><td class="r">12,90</td></tr>
+        <tr><td><a href="https://wolt.com/en/geo/tbilisi/venue/wolt-market-tsintsadze" target="_blank" rel="noopener">Хлеб белый 500 г</a></td><td class="r">3 × 1,88</td><td class="r">5,64</td></tr>
+        <tr><td><a href="https://wolt.com/ka/geo/tbilisi/venue/spar-abashidze/items/menucategory-62" target="_blank" rel="noopener">Подсолнечное масло 1 л</a> <span class="note">(SPAR, отдельный магазин — возможна вторая доставка)</span></td><td class="r">1</td><td class="r">6,49</td></tr>
+        <tr class="total"><td>Итого</td><td class="r"></td><td class="r">215,08</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Без сборов и доставки. Тяжёлую недельную закупку лучше заказать с доставкой, чем нести в руках.</p>
+
+  <h2>Что готовить: 6 блюд до 15 минут</h2>
+  <p class="lead">В выходной сварить крупы и приготовить курицу порциями. В будни — только собрать и разогреть.</p>
+  <ol class="meals">
+    <li>Сваренная заранее овсянка + йогурт + банан</li>
+    <li>Яйца + хлеб + помидоры</li>
+    <li>Рис + курица + огурец</li>
+    <li>Гречка + курица + помидоры</li>
+    <li>Картофель из микроволновки + творог + огурец</li>
+    <li>Рис + яйцо + курица + овощи на сковороде</li>
+  </ol>
+  <p class="note">Обеды: пн и чт — 3, вт и пт — 4, ср — 5, сб — 6, вс — 3. Завтраки чередовать 1 и 2, ужины — из остатков гарниров, курицы и творога. Готовую еду убрать в холодильник в течение 2 часов, хранить 3–4 дня, остальное заморозить (<a href="https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely" target="_blank" rel="noopener">FDA</a>). Нужны плита, кастрюля, сковорода, контейнеры и холодильник; мультиварка и аэрогриль удобны, но не обязательны.</p>
+
+  <h2>Обеды рядом</h2>
+  <p class="lead">Цены из меню Wolt, в зале могут отличаться. Бюджетный обед — 14–20 ₾, полный куриный набор — около 30 ₾.</p>
+  <div class="cards">
+    <div class="card">
+      <h3><a href="https://wolt.com/en/geo/tbilisi/restaurant/assorti-lunch-abashidze" target="_blank" rel="noopener">Assorti Lunch</a></h3>
+      <p>Куриный ланчбокс <b>29,80 ₾</b>: 2 котлеты, 300 г гарнира, 100 г салата. Шашлык с гарниром и салатом <b>32,80 ₾</b>.</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://wolt.com/en/geo/tbilisi/restaurant/bca-kitchen-x-dro/items/dros-club-9" target="_blank" rel="noopener">DRO</a></h3>
+      <p>Клаб-сэндвич курица/индейка <b>15 ₾</b> (582 ккал), куриный <b>14 ₾</b> (620 ккал). После тренировки одного мало.</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://wolt.com/en/geo/tbilisi/restaurant/ghomi-da-kveli-vake/items/ghomi-dishes-2" target="_blank" rel="noopener">Ghomi Da Kveli</a></h3>
+      <p>Лобио <b>15 ₾</b>, гоми с лобио <b>17 ₾</b>, гоми с курицей и орехами <b>20 ₾</b>. Грузинская домашняя кухня.</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://wolt.com/en/geo/tbilisi/restaurant/wasabi-abashidze" target="_blank" rel="noopener">Wasabi</a></h3>
+      <p>Рис или лапша с курицей и овощами <b>20 ₾</b>. Запасной вариант.</p>
+    </div>
+  </div>
+
+  <h2>Готовые рационы с доставкой</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Сервис</th><th>Что предлагают</th><th class="r">Цена</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://honeyrestaurant.ge/en/products/2000-calories" target="_blank" rel="noopener">Honey</a></td><td>2000 ккал, 5 блюд в день, доставка включена в цену</td><td class="r">80 ₾/день<br>525 ₾/нед.</td></tr>
+        <tr><td><a href="https://weeklydelivery.online/foodplans" target="_blank" rel="noopener">Weekly</a></td><td>Спортивный план 2000 ккал (белок 166 г) и XL 2500 ккал (белок 187 г)</td><td class="r">цена не указана</td></tr>
+        <tr><td><a href="https://good-food.ge/" target="_blank" rel="noopener">GoodFood</a></td><td>Рационы на день, неделю, месяц; бесплатная доставка по Тбилиси</td><td class="r">цена не указана</td></tr>
+        <tr><td><a href="https://gymnasia.ge/nutrition" target="_blank" rel="noopener">Gymnasia</a></td><td>План 1200 ккал — мало для полноценного активного дня</td><td class="r">59 ₾/день<br>354 ₾ за 6 дн.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p class="note">Цены проверены 24.09.2026 на страницах продавцов, ничего не заказано. Акции, наличие, сервисные сборы и доставка могут меняться; два магазина в корзине могут дать две платы за доставку. Это не расчёт калорий и не рекомендация врача.</p>
+  </footer>
+</main>
+</body>
+</html>
